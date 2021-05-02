@@ -2,10 +2,6 @@
     box-sizing: border-box;
 }
 
-body {
-    margin: 0 !important;
-}
-
 /* Fix Navbar */
 .navbar {
     background-color: #ffc107;
@@ -33,7 +29,7 @@ body {
 
 .text-position {
     position: absolute;
-    padding: 8%;
+    padding: 7% !important;
     display: block;
     text-align: left;
     color: white;
@@ -72,6 +68,29 @@ body {
         text-rendering: optimizeLegibility;
         text-justify: auto !important;
     }
+}
+
+div.container.card-white {
+    background-color: white;
+    position: relative;
+    height: 22vw;
+    width: 75%;
+    bottom: 7vw;
+    box-shadow: 0 4px 3px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+div.text-style {
+    font-family: 'Lato-Regular';
+    padding: 2%;
+}
+
+
+.bg-dark {
+    background-image: url('../images/bg.png');
+    background-position: top;
 }
 
 
