@@ -171,7 +171,7 @@ div.list-style {
 }
 
 .cards_item img {
-    width: 50%;
+    width: 25vh;
     text-align: center;
     margin: auto;
 }
@@ -185,9 +185,99 @@ div.list-style {
     overflow: hidden;
     border: 2px solid rgba(255, 255, 255, 0.2);
     border-radius: 5%;
-    height: 70vh;
+    height: 75vh;
 }
 
+.card_content {
+    padding: 3vh;
+    background-color: white;
+    text-align: center;
+    height: 75vh;
+}
+
+.card_title {
+    color: #ffc107;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+.card_text {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    font-size: 3vh;
+    color: black;
+}
+
+@media screen and (max-width: 420px) {
+    .card {
+        background-color: white;
+        border-radius: 0.25rem;
+        box-shadow: 0 20px 30px -14px rgba(0, 0, 0, 0.65);
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        border-radius: 2%;
+        height: 60vh;
+    }
+}
+
+
+@media screen and (max-width: 420px) {
+    .card_content {
+        padding: 1vh;
+        background-color: white;
+        text-align: center;
+        height: 75vh;
+    }
+}
+
+
+@media screen and (max-width: 420px) {
+    .cards_item img {
+        width: 15vh;
+        text-align: center;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .card_text {
+        padding-top: 0vh !important;
+        padding-bottom: 0vh !important;
+        font-size: 2vh !important;
+        margin-top: 8vh;
+        color: black;
+    }
+}
+
+footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1%;
+}
+
+a {
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+}
+
+a:link {
+    color: white;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    list-style-type: none;
+    text-decoration: none;
+}
 
 /* Fonts  */
 
