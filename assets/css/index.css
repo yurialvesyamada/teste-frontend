@@ -23,8 +23,26 @@
     background-clip: border-box;
     background-attachment: scroll;
     max-width: 100%;
-    height: 700px;
+    height: 110vh;
     position: relative;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+@media screen and (max-width: 450px) {
+    .bg-topo {
+        background-image: url('../images/img_topo.jpg');
+        background-position: right;
+        background-repeat: no-repeat;
+        background-clip: border-box;
+        background-attachment: fixed;
+        max-width: 100%;
+        height: 100vh;
+        position: relative;
+        background-color: black;
+    }
 }
 
 .text-position {
@@ -40,43 +58,69 @@
     font-family: 'Lato-Black';
 }
 
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 650px) {
     .text-position h1 {
-        font-size: 80px !important;
+        font-size: 6vw;
+        width: 40vw;
     }
 }
 
-@media screen and (max-width: 600px) {
-    .bg-topo {
-        background-image: url('../images/img_topo.jpg');
-        background-position: top;
-        background-repeat: no-repeat;
-        background-size: 150%;
-        background-clip: border-box;
-        background-attachment: fixed;
-        max-width: 100%;
-        height: 700px;
-        position: relative;
+@media screen and (min-width: 650px) {
+
+    .text-position h5 {
+        font-size: 2vw;
+        width: 40vw;
     }
 }
 
+.bg-dark {
+    background-image: url('../images/bg.png');
+    background-position: top;
+}
 
-@media screen and (max-width: 600px) {
-    .text-position {
-        font-size: 3vw !important;
-        padding: 5%;
-        text-rendering: optimizeLegibility;
-        text-justify: auto !important;
+div.panel {
+    position: relative;
+    /* margin: 5vh; */
+    height: 50vh;
+    padding: 10vh;
+    text-align: center;
+}
+
+@media screen and (max-width: 650px) {
+
+    .panel {
+        height: 80vh !important;
+        background-color: transparent;
+        border: none;
+        color: white;
+        align-items: center;
+        padding: 15vh !important;
     }
 }
 
-div.container.card-white {
+@media screen and (max-width: 420px) {
+
+    .panel,
+    h2,
+    h4 {
+        font-size: 2vh !important;
+        padding: 4% !important;
+        background-color: transparent;
+        border: none;
+        color: white;
+        align-items: center;
+    }
+} 
+
+
+
+/* div.container.card-white {
     background-color: white;
     position: relative;
     height: 22vw;
     width: 75%;
     bottom: 7vw;
-    box-shadow: 0 4px 3px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   ;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -85,15 +129,7 @@ div.container.card-white {
 div.text-style {
     font-family: 'Lato-Regular';
     padding: 2%;
-}
-
-
-.bg-dark {
-    background-image: url('../images/bg.png');
-    background-position: top;
-}
-
-
+} */
 
 
 
